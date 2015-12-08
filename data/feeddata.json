@@ -1,0 +1,18 @@
+[
+	{
+	    "opId" : 0,
+	    "opCmd" : "br make presubmit",
+	    "opType" : "build",
+	    "opDescr" : "Performs presubmit builds on a ws",
+	    "opParams" : 3
+    },
+    {
+	    "opId": 1,
+	    "opCmd" : "br make utest-l@sksim.linux64",
+	    "opType" : "build",
+	    "opDescr" : "Performs sksim build on a ws",
+	    "opParams" : 3
+
+    }
+]
+

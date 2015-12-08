@@ -1,0 +1,6 @@
+
+module.exports = {
+	UserName : "tvidya",
+	linuxMachine : "cycrh6nb64.eng.btc.netapp.in",
+	sshPublicKey : "AAAAB3NzaC1yc2EAAAADAQABAAABAQC2+ikYFk/SV6CIUYfcV5PuGfSyG0hGnYwrvywqttEpjmUKN0UihWfU2OqPt9hr1tuhazjsbd8Eai5bmV0PD3v51TakwrCFR2xlVW6uQMDdhlL8dY5CglvQ8URn274H+SNvc3PnzxpjCLTncwkUK+QVhAFxMAFEKXSOmu0hC7kKO03EKOd1rWknnnRGXSXOootAnG6Qrt/99Zh71a0cJieGLk64gDMcnJuWE/O3pVZbFIYNr1En9Jssd/IOKvD6Z/IsMRUxVBjS6r2nSGS7S2+0fYnSqiDpL/UPVv9FOLSrCR1Zeiimnnnigd+fNPJgj7GGNFiBYcPuYtnKOwxqwFtz"
+}
