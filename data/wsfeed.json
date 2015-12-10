@@ -1,0 +1,122 @@
+[
+  {
+  "username" : "spoddar", 
+  "ws" : [
+    { "wsId" : 0,
+        "wsName" : "spoddar:CPook_up_bmaps_16",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/CPook_up_bmaps_16_2872720_1506101713" 
+    },
+    { "wsId" : 2,
+        "wsName" : "spoddar:blkfree_again",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/blkfree_again_3518254_1511022303" 
+    },
+    { "wsId" : 4,
+        "wsName" : "spoddar:blkfree_test",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/blkfree_test_2982939_1509091738" 
+    },
+    { "wsId" : 6,
+        "wsName" : "spoddar:blkfree_test_again",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/blkfree_test_again_3519627_1511041204" 
+    },
+    { "wsId" : 8,
+        "wsName" : "spoddar:hack_SB_6",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/hack_SB_6_2891233_1507021726" 
+    },
+    { "wsId" : 10,
+        "wsName" : "spoddar:multi_clean_LB.10",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/multi_clean_LB_10_3531486_1511121904" 
+    },
+    { "wsId" : 12,
+        "wsName" : "spoddar:multi_clean_LB.14",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/multi_clean_LB_14_3535513_1511162000" 
+    },
+    { "wsId" : 14,
+        "wsName" : "spoddar:multi_clean_LB.16",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/multi_clean_LB_16_3540481_1511191514" 
+    },
+    { "wsId" : 16,
+        "wsName" : "spoddar:multi_clean_LB.18",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/multi_clean_LB_18_3549586_1511271750" 
+    },
+    { "wsId" : 18,
+        "wsName" : "spoddar:multi_clean_LB.3",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/multi_clean_LB_3_3518235_1511021653" 
+    },
+    { "wsId" : 20,
+        "wsName" : "spoddar:multi_clean_LB.6",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/multi_clean_LB_6_3519627_1511041202" 
+    },
+    { "wsId" : 22,
+        "wsName" : "spoddar:multi_clean_LB.8",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/multi_clean_LB_8_3519627_1511041909" 
+    },
+    { "wsId" : 24,
+        "wsName" : "spoddar:obj_store_10",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/obj_store_10_2891233_1511161626" 
+    },
+    { "wsId" : 26,
+        "wsName" : "spoddar:obj_store_4",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/obj_store_4_2891233_1510142141" 
+    },
+    { "wsId" : 28,
+        "wsName" : "spoddar:obj_store_5",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/obj_store_5_2891233_1511021608" 
+    },
+    { "wsId" : 30,
+        "wsName" : "spoddar:obj_store_6",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/obj_store_6_2891233_1511082303" 
+    },
+    { "wsId" : 32,
+        "wsName" : "spoddar:tools_dev_new",
+        "wsPath" : "/x/eng/bbnb/users/spoddar/tools_dev_new_3551178_1511301620" 
+    }
+     ],
+  "vsim" : [
+    { "vsimId" : 0,
+      "vsimName" : "dummy"
+    }
+   ]
+  },
+  {
+  "username" : "tvidya", 
+  "ws" : [
+    { "wsId" : 0,
+        "wsName" : "tvidya:1sal",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/1sal_3498599_1510211125" 
+    },
+    { "wsId" : 2,
+        "wsName" : "tvidya:2sal",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/2sal_3535019_1511161056" 
+    },
+    { "wsId" : 4,
+        "wsName" : "tvidya:b-obj",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/b_obj_2891233_1511031137" 
+    },
+    { "wsId" : 6,
+        "wsName" : "tvidya:cat-sal",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/cat_sal_3546993_1511261327" 
+    },
+    { "wsId" : 8,
+        "wsName" : "tvidya:creada",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/creada_3532761_1511161143" 
+    },
+    { "wsId" : 10,
+        "wsName" : "tvidya:obj",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/obj_2891233_1510261411" 
+    },
+    { "wsId" : 12,
+        "wsName" : "tvidya:reada",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/reada_3521584_1511041302" 
+    },
+    { "wsId" : 14,
+        "wsName" : "tvidya:sal-bk",
+        "wsPath" : "/x/eng/bbnb/users/tvidya/sal_bk_3504546_1511261352" 
+    }
+     ],
+  "vsim" : [
+    { "vsimId" : 0,
+      "vsimName" : "dummy"
+    }
+   ]
+  }
+]

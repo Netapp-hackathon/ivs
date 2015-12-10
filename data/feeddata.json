@@ -1,18 +1,44 @@
 [
 	{
 	    "opId" : 0,
-	    "opCmd" : "br make presubmit",
-	    "opType" : "build",
+	    "opCmd" : "cd BUILDPATH && br make presubmit",
+	    "opType" : "workspace",
+	    "opCategory" : "basic",
 	    "opDescr" : "Performs presubmit builds on a ws",
-	    "opParams" : 3
+	    "opParams" : {
+	    	"ws" : " "
+	    }
     },
     {
 	    "opId": 1,
-	    "opCmd" : "br make utest-l@sksim.linux64",
-	    "opType" : "build",
+	    "opCmd" : "cd BUILDPATH && br make utest-l@sksim.linux64",
+	    "opType" : "workspace",
+	    "opCategory" : "basic",
 	    "opDescr" : "Performs sksim build on a ws",
-	    "opParams" : 3
-
+	    "opParams" : {
+	    	"ws" : " "
+	    }
+    },
+    {
+	    "opId": 2,
+	    "opCmd" : "/u/smoke/p4/smoke/web/v2/include/submit_job/submit.cgi -username WHOAMI -remotesite NB -buildroot BUILDPATH -hardware_type vsim_64_bit -variant x86_64.debug.sim -select_action Presub_smoke",
+	    "opType" : "workspace",
+	    "opCategory" : "basic",
+	    "opDescr" : "Performs smoke test on a workspace",
+	    "opParams" : {
+	    	"ws" : " "
+	    }
+    },
+    {
+	    "opId": 3,
+	    "opCmd" : "cd BUILDPATH && /u/twrather/bin/cit.py --smokes",
+	    "opType" : "workspace",
+	    "opCategory" : "basic",
+	    "opDescr" : "Performs smoke test on a workspace",
+	    "opParams" : {
+	    	"ws" : " "
+	    }
     }
+
 ]
 

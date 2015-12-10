@@ -6,7 +6,8 @@ var opSchema = mongoose.Schema({
     	opCmd : String,
     	opType : String,
     	opDescr : String,
-    	opParams : Number
+    	opCategory : String,
+    	opParams : Object
 	});
 
  

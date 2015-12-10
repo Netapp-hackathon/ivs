@@ -1,0 +1,37 @@
+[
+	{ 
+		"username" : "tvidya",
+		"ws" : [
+				{
+					"wsId" : 0,
+					"wsName" : "xyz",
+					"wsPath" : "abc"
+				},
+				{
+					"wsId" : 0,
+					"wsName" : "hfgde",
+					"wsPath" : "vdfs"
+				}],
+		"vsim" : [
+					{
+						"vsimId" : 0,
+						"vsimName" : "dummy"
+					}]
+
+	},
+	{ 
+		"username" : "spoddar",
+		"ws" : [
+				{
+					"wsId" : 0,
+					"wsName" : "xyz",
+					"wsPath" : "abc"
+				}],
+		"vsim" : [
+					{
+						"vsimId" : 0,
+						"vsimName" : "dummy"
+					}]
+
+	}
+]

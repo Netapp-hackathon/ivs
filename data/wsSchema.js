@@ -1,8 +1,8 @@
   var mongoose = require('mongoose');
 var wsSchema = mongoose.Schema({
-  		WsId : Number,
-        WsName : String,
-        WsPath : String,
+  		wsId : Number,
+        wsName : String,
+        wsPath : String,
  });
 
-module.exports = mongoose.model('WsIvs', wsSchema, 'wsivs');
+module.exports = wsSchema;
