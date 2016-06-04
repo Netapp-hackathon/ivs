@@ -1,6 +1,7 @@
 [
 	{
 	    "opId" : 0,
+	    "opName" : "br make presubmit",
 	    "opCmd" : "cd BUILDPATH && br make presubmit",
 	    "opType" : "workspace",
 	    "opCategory" : "basic",
@@ -11,6 +12,7 @@
     },
     {
 	    "opId": 1,
+	    "opName" : "br make sksim",
 	    "opCmd" : "cd BUILDPATH && br make utest-l@sksim.linux64",
 	    "opType" : "workspace",
 	    "opCategory" : "basic",
@@ -21,6 +23,7 @@
     },
     {
 	    "opId": 2,
+	    "opName" : "dummy smoke",
 	    "opCmd" : "/u/smoke/p4/smoke/web/v2/include/submit_job/submit.cgi -username WHOAMI -remotesite NB -buildroot BUILDPATH -hardware_type vsim_64_bit -variant x86_64.debug.sim -select_action Presub_smoke",
 	    "opType" : "workspace",
 	    "opCategory" : "basic",
@@ -31,6 +34,7 @@
     },
     {
 	    "opId": 3,
+	    "opName" : "smokes",
 	    "opCmd" : "cd BUILDPATH && /u/twrather/bin/cit.py --smokes",
 	    "opType" : "workspace",
 	    "opCategory" : "basic",

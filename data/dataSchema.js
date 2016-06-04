@@ -4,6 +4,8 @@ var mongoose = require('mongoose');
 
 var opSchema = mongoose.Schema({
     	opId : Number,
+    	opName : String,
+    	opCategory : String,
     	opCmd : String,
     	opType : String,
     	opDescr : String,

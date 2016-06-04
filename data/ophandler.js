@@ -124,7 +124,7 @@ function readandexec(filepath, callback_func)
                                 console.log("Failed to run cmd " + err);
                                 callback_func(err, null);
                             } else {
-                                //console.log("Suceessfully ran cmd, storing cmd to db");
+                                console.log("Suceessfully ran cmd, storing cmd to db");
                                 var opCmdEntry = new OpCmdIvs({opId : dbObject.opId, eId : dbObject.eId});
                                 //var userNew = new UserIvs({username : outPutObject[index].username, ws : outPutObject[index].ws, vsim : outPutObject[index].vsim});
                                 opCmdEntry.save(function(err, opCmdEntry) {
@@ -156,19 +156,29 @@ function readOpcmdsfromAir()
                 //console.log("Writing ops to airlock counter " + counter[0] + " " +  counter);
                 var counter = configObj[0].confAirlockCtr;
                // var srcfilename = path.airPath + "ops_exec_" + counter;
-                var srcfilename = path.airPath + path.opsExecFormat + counter;
+                var srcfilename = path.airPath + path.opsExecFormat + counter + ".json";
                 readandexec(srcfilename, function(err, result){
                     if (err) {
                         console.error("Failed to execute commands from " + srcfilename);
                     } else {
-                       // console.log( "Suceessfully executed commands from " + srcfilename);
+                        console.log( "Suceessfully executed commands from " + srcfilename);
+                        //console.log("counter " + counter);
+                        counter++;
+                        //console.log("counter " + counter);
+                        ConfigIvs.update({ $set: { confAirlockCtr: counter }}, function(err, result){
+                            if (err) {
+                                console.log("failed to update new confAirWsCtr " + err);
+                            } else {
+                                //console.log("updated new confAirWsCtr " + counter);
+                            }
+                        });
                     }
                 });
                 
             }
     });
 }
-setInterval(readOpcmdsfromAir, 5 * 60 * 1000);
+setInterval(readOpcmdsfromAir, 30 * 1000);
 setTimeout(function(){
     // this code will only run when time has ellapsed
     readOpcmdsfromAir();
@@ -176,7 +186,7 @@ setTimeout(function(){
 //setInterval(readOpcmdsfromAir, 300000);
 function writeOpToAir ()
 {
-    OpIvs.find({},'opId opType opDescr opParams -_id').lean().exec(function (err, ops) {
+    OpIvs.find({},'opId opType opName opDescr opParams opCategory -_id').lean().exec(function (err, ops) {
     //OpIvs.find().lean().exec(function (err, users) {
         var opJson = (JSON.stringify(ops));
         //console.log("writeOpToAir : stringify obj " + opJson);
@@ -188,7 +198,7 @@ function writeOpToAir ()
                 //console.log("Writing ops to airlock counter " + counter[0] + " " +  counter);
                 var counter = configObj[0].confAirOpCtr;
                 var srcfilename = path.tempPath + "op";
-                var dstfilename = path.airPath + path.opsCmdFormat + counter;
+                var dstfilename = path.airPath + path.opsCmdFormat + counter + ".json";
                 fs.writeFile(srcfilename, opJson , function(err) {
                     if(err) {
                         console.log("Failed to write opAir file " + err);

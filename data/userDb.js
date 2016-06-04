@@ -27,7 +27,7 @@ function writeEntriesToDb (outPutObject)
     }
 function  writeWsToAir (counter) {
         //console.log("Counter value inside writeWsToAir " + counter);
-        var destFileName = path.airPath + path.wsFormat + counter;
+        var destFileName = path.airPath + path.wsFormat + counter + ".json";
         fs.copy(path.wspathLinux, destFileName, function(err, result) {
             if(err){
                 console.log("Failed to write ws airlock file " + err);

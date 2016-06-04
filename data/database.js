@@ -51,7 +51,7 @@
 							 });
               }
             }
-          });
+          });/*
             fs.readJson(userpath, function (err, outPutObject) {
               // console.log("Jason Object is " + outPutObject);
               if (err) {
@@ -75,8 +75,8 @@
                   });
 						    }
               }
-            }); 
-            /*         
+            }); */
+                     
             fs.readJson(userNamepath, function (err, outPutObject) {
               // console.log("Jason Object is " + outPutObject);
               if (err) {
@@ -100,7 +100,7 @@
                   });
                 }
               }
-            }); */         
+            });          
   				var configDb = new ConfigIvs({ confDbInited : true, confAirlockCtr : 0, confAirWsCtr : 0, confAirOpCtr : 0});
   				configDb.save(function(err, configDb) {
   								if (err) {

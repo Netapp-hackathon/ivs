@@ -26,7 +26,7 @@ function startWsUser(err, users) {
 		return;
 	}
 	
-	//console.log("User id for ws get is " + users);
+	console.log("User id for ws get is " + users);
 	var p4Cmd = "./fetchp4clients.sh " + users +" /u/tvidya/wsUserClient.json";
 	//console.log("P4 command " + p4Cmd);
 	seq.write(p4Cmd);
